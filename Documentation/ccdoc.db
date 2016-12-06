@@ -1,0 +1,711 @@
+ccdoc v0.8 verbose
+$ 0
+S 15
+f 10 webdocs/ccdoc.db
+s
+7 Modules
+0
+0
+pkg
+0 
+0
+0
+f 9 Polygon.h
+s
+a $comment-0
+1
+0
+cop
+0 
+7
+2a
+2 @{
+5 @file
+1 2
+9 Polygon.h
+1 6
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 3
+10  @file polygon.h
+36  @brief ADT containing function prototypes for Polygon
+1  
+a @long_desc
+1 0
+7 @params
+1 0
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 1
+e Saad Bin Zafar
+8 @version
+1 1
+c 3.0 05/21/14
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-1
+2
+0
+cop
+0 
+12
+27
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 17
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 2
+1a  Polygon complex data type
+29  which stores the attributes of a Polygon
+a @long_desc
+1 0
+7 @params
+1 0
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-2
+3
+0
+cop
+0 
+23
+35
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 34
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 1
+2b  plg_new creates a new Polygon with malloc.
+a @long_desc
+1 2
+3a  Initialize all ADT data members with its parameter values
+15  and returns Polygon.
+7 @params
+1 3
+6 @param
+1 2
+4 xCor
+43 - a dynamic array for the x coordinates of the points in a Polygon.
+6 @param
+1 2
+4 yCor
+43 - a dynamic array for the y coordinates of the points in a Polygon.
+6 @param
+1 2
+9 numOfVert
+39 - an integer storing the number of points in the Polygon.
+8 @returns
+1 1
+25 a pointer of the new Polygon created.
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-3
+4
+0
+cop
+0 
+29
+2a
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 40
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 1
+50  plg_delete Frees the memory allocated to the Polygon passed into this function.
+a @long_desc
+1 0
+7 @params
+1 1
+6 @param
+1 2
+3 pol
+1e - a Polygon structure pointer.
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-4
+5
+0
+cop
+0 
+32
+30
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 49
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 1
+3d  plg_read accepts a Polygon and a file pointer as parameters.
+a @long_desc
+1 1
+4b  reads the polygon point data from the file and passes the data to plg_new.
+7 @params
+1 2
+6 @param
+1 2
+3 pol
+13 pointer to Polygon.
+6 @param
+1 2
+7 plgData
+29 File * to a file plgData open for reading
+8 @returns
+1 1
+2e a pointer of the new polygon created from file
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-5
+6
+0
+cop
+0 
+39
+2e
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 56
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 1
+2a  plg_write saves Polygon points to a file.
+a @long_desc
+1 0
+7 @params
+1 2
+6 @param
+1 2
+7 plgData
+2a File * to a file plgData open for writing.
+6 @param
+1 2
+3 pol
+1e - a Polygon structure pointer.
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-6
+7
+0
+cop
+0 
+40
+2c
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 63
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 1
+1 .
+a @long_desc
+1 1
+30  Calculates and returns the area of the Polygon.
+7 @params
+1 1
+6 @param
+1 2
+3 pol
+16 - a Polygon structure.
+8 @returns
+1 1
+1f a double - area of the Polygon.
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-7
+8
+0
+cop
+0 
+47
+2b
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 70
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 2
+3c  plg_vertShift shifts the vertices of the Polygon vertically
+13  (along the y-axis)
+a @long_desc
+1 0
+7 @params
+1 1
+6 @param
+1 2
+3 pol
+16 - a Polygon structure.
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-8
+9
+0
+cop
+0 
+4e
+2b
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 77
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 2
+3f  plg_horizShift shifts the vertices of the Polygon horizontally
+13  (along the x-axis)
+a @long_desc
+1 0
+7 @params
+1 1
+6 @param
+1 2
+3 pol
+16 - a Polygon structure.
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+a $comment-9
+a
+0
+cop
+0 
+56
+2c
+2 @{
+5 @file
+1 2
+9 Polygon.h
+2 85
+5 @type
+1 1
+7 @prefix
+b @short_desc
+1 2
+2d  plg_isClosed checks if the Polygon is closed
+3a  by checking if the first coordinate matches the last one.
+a @long_desc
+1 1
+1d  Prints the result to screen.
+7 @params
+1 1
+6 @param
+1 2
+3 pol
+17 - a Polygon structure..
+8 @returns
+1 0
+b @exceptions
+1 0
+b @deprecated
+1 0
+8 @authors
+1 0
+8 @version
+1 0
+5 @sees
+1 0
+6 @since
+1 0
+7 @source
+1 0
+4 @pkg
+1 0
+7 @pkgdoc
+1 0
+5 @todo
+1 0
+2 @}
+s
+7 POLYGON
+b
+0
+m00
+0 
+b
+2
+6 define
+7 POLYGON
+s
+7 Polygon
+c
+0
+tyv
+0 
+19
+16
+7 typedef
+6 struct
+1 {
+4 char
+6 f_name
+1 [
+2 20
+1 ]
+1 ;
+6 double
+1 *
+c xCoordinates
+1 ;
+6 double
+1 *
+c yCoordinates
+1 ;
+3 int
+10 numberOfVertices
+1 ;
+1 }
+7 Polygon
+s
+a plg_delete
+d
+0
+fct
+0 
+2a
+7
+4 void
+a plg_delete
+1 (
+7 Polygon
+1 *
+3 pol
+1 )
+s
+b plg_getArea
+e
+0
+fct
+0 
+41
+7
+6 double
+b plg_getArea
+1 (
+7 Polygon
+1 *
+3 pol
+1 )
+s
+e plg_horizShift
+f
+0
+fct
+0 
+4f
+7
+4 void
+e plg_horizShift
+1 (
+7 Polygon
+1 *
+3 pol
+1 )
+s
+c plg_isClosed
+10
+0
+fct
+0 
+57
+7
+4 void
+c plg_isClosed
+1 (
+7 Polygon
+1 *
+3 pol
+1 )
+s
+7 plg_new
+11
+0
+fct
+0 
+24
+f
+7 Polygon
+1 *
+7 plg_new
+1 (
+6 double
+1 *
+4 xCor
+1 ,
+6 double
+1 *
+4 yCor
+1 ,
+3 int
+9 numOfVert
+1 )
+s
+8 plg_read
+12
+0
+fct
+0 
+33
+8
+7 Polygon
+1 *
+8 plg_read
+1 (
+4 FILE
+1 *
+7 plgData
+1 )
+s
+d plg_vertShift
+13
+0
+fct
+0 
+48
+7
+4 void
+d plg_vertShift
+1 (
+7 Polygon
+1 *
+3 pol
+1 )
+s
+9 plg_write
+14
+0
+fct
+0 
+3a
+b
+4 void
+9 plg_write
+1 (
+7 Polygon
+1 *
+3 pol
+1 ,
+4 FILE
+1 *
+7 plgData
+1 )
+e
